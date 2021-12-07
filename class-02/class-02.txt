@@ -1,0 +1,26 @@
+Hey @everyone
+
+Class-02 of #100Devs starts in 60 minutes (6:30pm ET) live on Twitch: https://leonnoel.com/twitch
+
+Here are the slides if you would like to follow along: https://slides.com/leonnoel/html-more-basics-100devs/live (remove /live for a non auto-advancing  copy)
+
+Please check-in by liking and retweeting this tweet before class: https://twitter.com/leonnoel/status/1321927360090832896
+
+If you need to change your twitter, please use this form: https://forms.gle/RXJNL9f5WepxCp9XA
+
+The last #100Devs class can be found here: https://www.twitch.tv/videos/783874538
+
+Homework (Due Thursday - Nov. 5th):
+Old:
+Watch: https://youtu.be/ukLnPbIffxE
+Watch: https://youtu.be/Z-zNHHpXoMM
+Complete: https://www.coursera.org/learn/learning-how-to-learn
+New:
+Read: https://learn.shayhowe.com/html-css/
+Build: HTML for BBC Website (just what is in the attached image)
+
+:rotating_light: NO OFFICE HOURS SAT DUE TO HALLOWEEN :rotating_light:
+
+:rotating_light: NO CLASS NEXT TUESDAY DUE TO THE US ELECTION :rotating_light:
+
+Also, the files you’ll need for class / homework are attached! Don't forget to unzip the folder!

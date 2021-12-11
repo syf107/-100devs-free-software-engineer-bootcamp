@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2.
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Finding the color preparation
+font #fff
+background 87ceeb
+border: #48CD31
+nav : #4ACC99
+nav border: #808587
+paragraph: #E3EBEE;
+ */
+
+/*
+=============
+Body
+=============
+*/
+body {
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  border: 20px solid #87ceeb;
+  box-sizing: border-box;
+}
+
+.page-container {
+  padding: 15px 45px;
+  border: 5px solid #48CD31;
+  background-color: #87ceeb;
+  margin-bottom: 0;
+}
+
+/*
+=====================
+Header
+=====================
+ */
+
+header {
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  font: italic 30px/1.3 "Uchen", serif;
+  word-spacing: -0.8ch;
+}
+
+ul {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+nav ul li {
+  font: bold 14px Helvetica;
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: none;
+  border-right: 2px solid #808587;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #4ACC99;
+}
+
+nav ul li:last-of-type {
+  border: 0;
+}
+
+#white-alone {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+=====================
+Content
+=====================
+*/
+section h2 {
+  font: bold 20px/3 "Helvetica", sans-serif;
+
+}
+
+p {
+  font: 16px/1.3 "Times New Roman", sans-serif;
+  color: #E3EBEE;
+  padding-bottom: 20px;
+
+}
+
+img {
+  width: 30%;
+  float: right;
+  padding: 0 15px 10px 15px;
+}

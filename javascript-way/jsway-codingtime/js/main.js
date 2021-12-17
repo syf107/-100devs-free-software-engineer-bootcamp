@@ -44,7 +44,7 @@
 // console.log(a, b, c, d, e, f, g); // 2 10 102 30 40 10 10
 // // Check your prediction by executing it.
 
-// // Coding Time! Chapter 02
+// // Coding Time! Chapter 3
 // // VAT calculation
 // // Write a program that asks the user for a raw price. After that, it calculates the corresponding final price using a VAT rate of 20.6%.
 // let price = Number(prompt("What's the price?"));
@@ -81,7 +81,8 @@
 
 // // T> This exercise has several valid solutions. You may use more than two variables to solve it.
 
-// // Coding Time! Chapter 03
+// // Coding Time! Chapter 4
+
 // // Here are a few pieces of advice about these exercises:
 
 // // Keep on choosing your variable names wisely, and respect indentation when creating code blocks associated to if, else and switch statements.
@@ -248,136 +249,247 @@
 //   console.log(`${hours}h${minutes}m${seconds}s`);
 // }
 
-// Coding Time! Chapter 04
-// Try to code each exercise twice, once with a while loop and the other with a for, to see for yourself which one is the most appropriate.
+// // Coding Time! Chapter 5
+// // Try to code each exercise twice, once with a while loop and the other with a for, to see for yourself which one is the most appropriate.
 
-// Write a program that launches a carousel for 10 turns, showing the turn number each time.
-for (let i = 1; i <= 10; i++) {
-  console.log("Carousel turn " + i);
-}
+// // Write a program that launches a carousel for 10 turns, showing the turn number each time.
+// for (let i = 1; i <= 10; i++) {
+//   console.log("Carousel turn " + i);
+// }
 
-let turn = 1;
-while (turn <= 10) {
-  console.log(`Carousel turn ${turn}`);
-  turn++;
-}
+// let turn = 1;
+// while (turn <= 10) {
+//   console.log(`Carousel turn ${turn}`);
+//   turn++;
+// }
 
-// When it's done, improve it so that the number of turns is given by the user.
+// // When it's done, improve it so that the number of turns is given by the user.
 
-let userTurn = Number(prompt("How many turns do you want for the carousel?"));
+// let userTurn = Number(prompt("How many turns do you want for the carousel?"));
 
-for (let i = 1; i <= userTurn; i++) {
-  console.log(`Carousel turn ${i}`);
-}
+// for (let i = 1; i <= userTurn; i++) {
+//   console.log(`Carousel turn ${i}`);
+// }
 
-Parity
-Check the following program that shows even numbers (divisible by 2) between 1 and 10.
+// Parity
+// Check the following program that shows even numbers (divisible by 2) between 1 and 10.
 
-for (let i = 1; i <= 10; i++) {
-  if (i % 2 === 0) {
-    console.log(`${i} is even`);
-  }
-}
-This program uses the modulo operator %, which calculates the remainder after division of one number by another. It's often used to assess number parity.
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(`${i} is even`);
+//   }
+// }
+// This program uses the modulo operator %, which calculates the remainder after division of one number by another. It's often used to assess number parity.
 
-console.log(10 % 2); // 0 because 10 = 5 * 2 + 0
-console.log(11 % 2); // 1 because 11 = 5 * 2 + 1
-console.log(18 % 3); // 0 because 18 = 3 * 6 + 0
-console.log(19 % 3); // 1 because 19 = 3 * 6 + 1
-console.log(20 % 3); // 2 because 20 = 3 * 6 + 2
+// console.log(10 % 2); // 0 because 10 = 5 * 2 + 0
+// console.log(11 % 2); // 1 because 11 = 5 * 2 + 1
+// console.log(18 % 3); // 0 because 18 = 3 * 6 + 0
+// console.log(19 % 3); // 1 because 19 = 3 * 6 + 1
+// console.log(20 % 3); // 2 because 20 = 3 * 6 + 2
 
-// Improve the program so that it also shows odd numbers.
+// // Improve the program so that it also shows odd numbers.
 
-for (let i = 1; i <= 10; i++) {
-  if (i % 2 === 0) {
-    console.log(`${i} is even.`);
-  } else {
-    console.log(`${i} is odd.`);
-  }
-}
-// Improve it again to replace the initial number 1 by a number given by the user.
-const startingNumber = Number(prompt("At what number do you want to start?"));
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(`${i} is even.`);
+//   } else {
+//     console.log(`${i} is odd.`);
+//   }
+// }
+// // Improve it again to replace the initial number 1 by a number given by the user.
+// const startingNumber = Number(prompt("At what number do you want to start?"));
 
-for (let i = startingNumber; i <= 10; i++) {
-  if (i % 2 === 0) {
-    console.log(`${i} is even.`);
-  } else {
-    console.log(`${i} is odd.`);
-  }
-}
+// for (let i = startingNumber; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(`${i} is even.`);
+//   } else {
+//     console.log(`${i} is odd.`);
+//   }
+// }
 
-// This program must show exactly 10 numbers including the first one, not 11 numbers!
+// // This program must show exactly 10 numbers including the first one, not 11 numbers!
 
-Input validation
-Write a program that continues to ask the user for a number until the entered number is less than or equal to 100.
-
-When you are done with the above, improve the program so that the terminating number is between 50 and 100.
-
-making variable above one hundred so the condition is true for the first attempt.
-let number = 101;
-
-while (number > 100) {
-  number = Number(prompt("Please put the number less than or equal to 100:"));
-  console.log(number);
-}
+// Input validation
+// Write a program that continues to ask the user for a number until the entered number is less than or equal to 100.
 
 // When you are done with the above, improve the program so that the terminating number is between 50 and 100.
 
-let number = 101;
+// making variable above one hundred so the condition is true for the first attempt.
+// let number = 101;
 
-while (number > 100 || number < 50) {
-  number = Number(
-    prompt(
-      "Please put the number more than and equal to 50 and less than or equal to 100:"
-    )
-  );
-  console.log(number);
-}
+// while (number > 100) {
+//   number = Number(prompt("Please put the number less than or equal to 100:"));
+//   console.log(number);
+// }
 
-// Multiplication table
-// Write a program that asks the user for a number, then shows the multiplication table for this number.
+// // When you are done with the above, improve the program so that the terminating number is between 50 and 100.
 
-let theNumber = Number(prompt("What is your number?"));
+// let number = 101;
 
-for (let i = 1; i <= theNumber; i++) {
-  console.log(`${i} x ${theNumber} = ${i * theNumber}`);
-}
+// while (number > 100 || number < 50) {
+//   number = Number(
+//     prompt(
+//       "Please put the number more than and equal to 50 and less than or equal to 100:"
+//     )
+//   );
+//   console.log(number);
+// }
 
-// When you are done, improve the program so it only accepts numbers between 2 and 9 (use the previous exercise as a blueprint).
-let theNumber = 1;
+// // Multiplication table
+// // Write a program that asks the user for a number, then shows the multiplication table for this number.
 
-while (!(theNumber >= 2 && theNumber <= 9)) {
-  theNumber = Number(prompt("What is your number? Only put 2 to 9"));
-}
+// let theNumber = Number(prompt("What is your number?"));
 
-for (let i = 1; i <= theNumber; i++) {
-  console.log(`${i} x ${theNumber} = ${i * theNumber}`);
-}
+// for (let i = 1; i <= theNumber; i++) {
+//   console.log(`${i} x ${theNumber} = ${i * theNumber}`);
+// }
 
-// Neither yes nor no
-// Write a program that plays "neither yes, nor no" with the user. Specifically, the programs asks the user to enter text until either "yes" or "no" is typed, which ends the game.
+// // When you are done, improve the program so it only accepts numbers between 2 and 9 (use the previous exercise as a blueprint).
+// let theNumber = 1;
 
-let text = "";
+// while (!(theNumber >= 2 && theNumber <= 9)) {
+//   theNumber = Number(prompt("What is your number? Only put 2 to 9"));
+// }
 
-while (text !== "yes" && text !== "no") {
-  text = prompt('This program will end when you write "yes" or "no"');
-}
+// for (let i = 1; i <= theNumber; i++) {
+//   console.log(`${i} x ${theNumber} = ${i * theNumber}`);
+// }
 
-// FizzBuzz
-// Write a program that shows all numbers between 1 and 100 with the following exceptions:
+// // Neither yes nor no
+// // Write a program that plays "neither yes, nor no" with the user. Specifically, the programs asks the user to enter text until either "yes" or "no" is typed, which ends the game.
 
-// It shows "Fizz" instead if the number is divisible by 3.
+// let text = "";
 
-// It shows "Buzz" instead if the number is divisible by 5 and not by 3.
+// while (text !== "yes" && text !== "no") {
+//   text = prompt('This program will end when you write "yes" or "no"');
+// }
 
-// When it's done, improve it so that the program shows "FizzBuzz" instead for numbers divisible both by 3 and by 5.
+// // FizzBuzz
+// // Write a program that shows all numbers between 1 and 100 with the following exceptions:
 
-for (let i = 1; i <= 100; i++) {
-  let shownWord = "";
-  if (i % 3 === 0) shownWord += "Fizz";
-  if (i % 5 === 0) shownWord += "Buzz";
+// // It shows "Fizz" instead if the number is divisible by 3.
 
-  shownWord ? console.log(shownWord) : console.log(i);
-}
+// // It shows "Buzz" instead if the number is divisible by 5 and not by 3.
 
-// This exercise has many, many solutions. It's a job interview classic that a significant number of candidates fail. Try your best!
+// // When it's done, improve it so that the program shows "FizzBuzz" instead for numbers divisible both by 3 and by 5.
+
+// for (let i = 1; i <= 100; i++) {
+//   let shownWord = "";
+//   if (i % 3 === 0) shownWord += "Fizz";
+//   if (i % 5 === 0) shownWord += "Buzz";
+
+//   shownWord ? console.log(shownWord) : console.log(i);
+// }
+
+// // This exercise has many, many solutions. It's a job interview classic that a significant number of candidates fail. Try your best!
+
+// // Chapter 6. Coding time!
+// // Improved hello
+// // Complete the following program so that it asks the user for his first and last names, then show the result of the sayHello() function.
+
+// // Say hello to the user
+// function sayHello(firstName, lastName) {
+//   const message = `Hello, ${firstName} ${lastName}!`;
+//   return message;
+// }
+
+// // TODO: ask user for first and last name
+// const firstName = prompt("What is your first name?");
+// const lastName = prompt("What is your last name?");
+
+// // TODO: call sayHello() and show its result
+// console.log(sayHello(firstName, lastName));
+
+// // Number squaring
+// // Complete the following program so that the square1() and square2() functions work properly.
+
+// // Square the given number x
+// function square1(x) {
+//   return x * x;
+// }
+
+// // Square the given number x
+// const square2 = (x) => x * x; // TODO: complete the function code
+
+// console.log(square1(0)); // Must show 0
+// console.log(square1(2)); // Must show 4
+// console.log(square1(5)); // Must show 25
+
+// console.log(square2(0)); // Must show 0
+// console.log(square2(2)); // Must show 4
+// console.log(square2(5)); // Must show 25
+
+// // When it's done, update the program so that it shows the square of every number between 0 and 10.
+// for (let i = 1; i <= 10; i++) {
+//   console.log(square1(i));
+// }
+// // Writing 10 dumb calls to square() is forbidden! You know how to repeat statements, don't you? ;)
+
+// // Minimum of two numbers
+// // Let's pretend the JavaScript Math.min() function doesn't exist. Complete the following program so that the min() function returns the minimum of its two received numbers.
+
+// // TODO: write the min() function
+// function min(firstNum, secondNum) {
+//   if (firstNum > secondNum) {
+//     return secondNum;
+//   } else if (firstNum < secondNum) {
+//     return firstNum;
+//   } else {
+//     return firstNum;
+//   }
+// }
+
+// console.log(min(4.5, 5)); // Must show 4.5
+// console.log(min(19, 9)); // Must show 9
+// console.log(min(1, 1)); // Must show 1
+
+// // Calculator
+// // Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.
+
+// // TODO: complete program
+// function calculate(firstNumber, operator, secondNumber) {
+//   switch (operator) {
+//     case "+":
+//       return firstNumber + secondNumber;
+//       break;
+//     case "-":
+//       return firstNumber - secondNumber;
+//       break;
+//     case "*":
+//       return firstNumber * secondNumber;
+//       break;
+//     case "/":
+//       return firstNumber / secondNumber;
+//       break;
+//     default:
+//       return "Invalid operator.";
+//       break;
+//   }
+// }
+
+// console.log(calculate(4, "+", 6)); // Must show 10
+// console.log(calculate(4, "-", 6)); // Must show -2
+// console.log(calculate(2, "*", 0)); // Must show 0
+// console.log(calculate(12, "/", 0)); // Must show Infinity
+
+// // Circumference and area of a circle
+// // Write a program containing two functions to calculate the circumference and area of a circle defined by its radius. Test it using user input.
+
+// // Here are some tips for solving this exercise:
+
+// // Circumference and area calculation formulas should be part of your secondary school memories... Or a Google click away :)
+// // The value of number π (Pi) is obtained with Math.PI in JavaScript.
+// // You might want to use the exponentiation operator ** to perform computations.
+
+// function circumferenceOfCircle(radius) {
+//   return Math.PI * (2 * radius);
+// }
+
+// function areaOfCircle(radius) {
+//   return Math.PI * radius * radius;
+// }
+
+// console.log(circumferenceOfCircle(7));
+// console.log(areaOfCircle(7));
+// console.log(circumferenceOfCircle(14));
+// console.log(areaOfCircle(14));

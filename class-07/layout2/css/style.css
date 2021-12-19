@@ -1,0 +1,110 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 100%;
+  height: 90px;
+  margin-bottom: 100px;
+  /* background-color: blue; */
+}
+
+nav {
+  height: 100%;
+  width: 90%;
+  /* background-color: lawngreen; */
+  margin: auto auto;
+}
+
+nav > * {
+  display: inline-block;
+  /* text-align: center; */
+}
+
+.navigation-search {
+  display: inline-block;
+  padding: 0 10px;
+  width: 30%;
+  margin-right: 7%;
+}
+
+.navigation-search button {
+  margin-right: 25px;
+}
+.navigation-search input {
+  width: 100px;
+}
+
+.khan-academy-logo {
+  width: 30%;
+  margin-right: 7%;
+}
+
+.donate-login {
+  width: 25%;
+  margin-right: 0;
+}
+
+.donate-login-menu ul {
+  float: right;
+}
+
+.donate-login-menu li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.donate-login-menu li:last-child {
+  margin-right: 0;
+}
+
+main {
+  width: 90%;
+  padding: 25px 10px;
+  margin: 0 auto;
+}
+.main-img {
+  width: 50%;
+  float: left;
+}
+
+.main-img img {
+  width: 100%;
+  padding: 10px;
+}
+
+.main-desc {
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
+
+.navigation-button > button {
+  margin-right: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

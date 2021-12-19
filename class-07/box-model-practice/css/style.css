@@ -1,0 +1,23 @@
+h1 {
+  padding: 30px 0 30px 30px;
+  margin-right: 30px;
+  background-color: lavender;
+  color: skyblue;
+}
+
+h2 {
+  padding: 40px 0;
+  border-top: 4px solid darkgreen;
+  border-bottom: 4px solid darkgreen;
+}
+
+section {
+  border: 15px solid blue;
+  height: 300px;
+  margin-top: 400px;
+}
+
+span {
+  border: 2px solid yellow;
+  padding: 30px;
+}

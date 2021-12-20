@@ -1,0 +1,87 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 100%;
+  height: 33.33vh;
+  border: 5px solid teal;
+  background-color: red;
+}
+
+main > section {
+  width: 33.33%;
+  height: 33.33vh;
+  border: 3px solid maroon;
+  background-color: mediumseagreen;
+  float: left;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 33.33vh;
+  border: 5px solid yellow;
+  background-color: turquoise;
+}
+
+/******************************************
+/* RESPONSIVE
+/*******************************************/
+
+@media (max-width: 75em) {
+  .mid-queries {
+    width: 50%;
+    background-color: lawngreen;
+  }
+
+  main > section:last-child {
+    width: 100%;
+    color: aquamarine;
+  }
+}
+
+@media (max-width: 50em) {
+  main > section {
+    border: 4px solid black;
+    width: 100%;
+    background-color: maroon;
+  }
+
+  .mid-queries {
+    width: 100%;
+    background-color: maroon;
+  }
+}
+
+@media (max-width: 45em) {
+  header,
+  footer {
+    border: 4px solid blue;
+    width: 100%;
+    background-color: royalblue;
+  }
+}

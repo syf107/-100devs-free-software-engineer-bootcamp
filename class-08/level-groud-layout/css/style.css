@@ -1,0 +1,347 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+
+/* BASE STYLES
+/*******************************************/
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px  = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+header {
+  /* width: 100%; */
+  background-color: #68718a;
+  height: 6rem;
+}
+
+.header-nav {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  font-size: 1.6rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f1f1f1;
+  text-transform: uppercase;
+}
+
+.nav-logo {
+  font-size: 1.6rem;
+  color: #f1f1f1;
+  text-transform: uppercase;
+}
+
+.donate-btn {
+  color: #68718a;
+  padding: 0.9rem 1.2rem;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+
+/******************************************
+/* SECTION HERO 
+/*******************************************/
+
+.section-hero {
+  background-color: #68718a;
+  padding: 4rem 0;
+}
+
+.hero {
+  color: #f1f1f1;
+}
+
+.heading-primary {
+  text-align: center;
+  font-weight: 500;
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.2;
+  margin-bottom: 3.6rem;
+}
+
+.hero-play {
+  margin: 0 auto 10rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.hero-play > span {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #f1f1f1;
+}
+
+.play-logo {
+  height: 15px;
+  width: 15px;
+  padding: 10px;
+  border: 3px solid #f1f1f1;
+  color: #f1f1f1;
+  border-radius: 50%;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  color: #222;
+  text-align: center;
+  font-style: italic;
+}
+
+/******************************************
+/* SECTION WHY 
+/*******************************************/
+
+.section-why {
+  background-color: white;
+  padding: 8rem 0;
+  color: #222;
+}
+
+.secondary-heading {
+  text-align: center;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-bottom: 2.4rem;
+}
+
+.why-text {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 40%;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/******************************************
+/* SECTION FACILITY 
+/*******************************************/
+
+.section-facility {
+  background-color: #dadee1;
+}
+
+.section-facility {
+  padding: 8rem 0;
+}
+
+.facility {
+  display: flex;
+  gap: 1rem;
+}
+.facility-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.facility-grey-photos {
+  height: 20rem;
+  width: 35rem;
+  background-color: #1e222f;
+  margin-bottom: 2.4rem;
+}
+
+.facility-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.facility-text {
+  width: 80%;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.3;
+}
+
+.btn-clear {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Fira Sans", sans-serif;
+  border: 2px solid #777;
+  color: #222;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+}
+
+/******************************************
+/* SECTION VOLUNTEER 
+/*******************************************/
+
+.section-volunteer {
+  padding: 8rem 0;
+  color: #222;
+}
+
+.volunteer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.volunteer-text {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 40%;
+  margin: 0 auto;
+  line-height: 1.4;
+  margin-bottom: 2.4rem;
+}
+
+/******************************************
+/* SECTION FOOTER 
+/*******************************************/
+
+.section-footer {
+  background-color: #1e222f;
+  padding: 3.2rem 0;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid white;
+}
+
+.footer-navigation {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.nav-logo {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-nav > p {
+  font-size: 1.6rem;
+}
+
+.footer-address {
+  color: #f1f1f1;
+}
+
+.footer-nav-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-link > a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-address {
+  flex-basis: 10%;
+  font-size: 1.2rem;
+}
+
+.footer-address > p {
+  line-height: 1.5;
+}
+
+.address-place {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.copyright-section {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-text {
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}

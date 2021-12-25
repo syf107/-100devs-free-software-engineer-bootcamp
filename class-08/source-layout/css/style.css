@@ -95,6 +95,7 @@ header {
 
 .hero {
   display: flex;
+  padding-right: 0;
   gap: 10rem;
 }
 
@@ -151,11 +152,74 @@ header {
   line-height: 1.5;
 }
 
+/*******************************************/
+/***********    FEATURES    ****************/
+/*******************************************/
+
 .section-features {
   background-color: #f5f8fc;
+  padding: 5rem;
 }
 
 .features {
   display: flex;
+  justify-content: space-between;
   /* flex-direction: column; */
+}
+
+.feature-list {
+  flex: 0 1 17.5%;
+}
+
+.feature-logo {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.feature-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.feature-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+  word-spacing: 2px;
+  letter-spacing: 1.2px;
+  margin-bottom: 1.6rem;
+}
+
+.feature-link:link,
+.feature-link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.section-end {
+  padding: 5rem;
+  width: 55%;
+}
+
+.end-title {
+  font-size: 5.2rem;
+  margin-bottom: 2rem;
+}
+
+.end-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+  word-spacing: 2px;
+  letter-spacing: 1.2px;
+  margin-bottom: 1.6rem;
+}
+
+footer {
+  background-color: #f5f8fc;
+  margin: 0 8rem;
+  height: 10vh;
 }

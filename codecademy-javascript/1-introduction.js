@@ -106,3 +106,28 @@ const celcius = kelvin - 273;
 // the temperature conversion to fahrenheit.
 const fahrenheit = Math.floor(celcius * (9 / 5) + 32);
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+
+// Dog Years
+// the age of me
+let myAge = 10;
+
+// early years variable
+let earlyYears = 2;
+earlyYears *= 10.5;
+
+// this is thre result of our later years.
+let laterYears = myAge - 2;
+
+// multiply our remaining age, outside the earlyYears with four to see the rest of our age in Dog Years.
+laterYears *= 4;
+
+console.log(earlyYears, laterYears);
+
+
+// Our total age in dog years, using calculated earlyYears and laterYears;
+let myAgeInDogYears = earlyYears + laterYears;
+
+// Create a myName variable and make it into lowercase with toLowerCase() Built-In method.
+let myName = "Syarief Arifin".toLowerCase();
+
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.` );

@@ -91,6 +91,7 @@ function removeElement(newArr) {
 
 removeElement(concept);
 console.log(concept);
+``;
 
 // Nested Array
 const numberClusters = [

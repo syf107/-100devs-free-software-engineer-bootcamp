@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,21 +22,543 @@
 /*******************************************/
 
 body {
-
+  font-family: sans-serif;
+  color: #eee;
+  background-color: black;
+  line-height: 1;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.hero-header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(../images/hero-image.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 668px;
 }
 
-footer {
+.navigation {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 18px;
 
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.hero-page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.about-us {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(74, 52, 37, 0.2),
+      rgba(74, 52, 37, 0.8)
+    ),
+    url(../images/about-us-image.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-us-content {
+  border-radius: 8px;
+  background-color: #795c4b;
+  padding: 25px;
+  width: 40%;
+  position: absolute;
+  top: 70px;
+  right: 90px;
+}
+
+.order-now {
+  background-image: linear-gradient(0deg, #4a3425, #795c4b);
+  width: 100%;
+  height: 900px;
+  padding: 50px 0;
+}
+
+.order-now-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* ADDITIONAL STYLES:: HERO
 /*******************************************/
+
+.navigation-link:link,
+.navigation-link:visited {
+  color: #eee;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  /* background-color: red; */
+}
+
+.nav-icons {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1,
+.about-us-content h1,
+.order-now h1,
+.opening-hours h1,
+.testimonial h1 {
+  font-weight: bold;
+  font-family: "Vidaloka", serif;
+}
+
+.hero-content h1 {
+  font-size: 74px;
+}
+
+.hero-search {
+  margin-bottom: 16px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.hero-search input {
+  /* height: 36px; */
+  font-size: 12px;
+  width: 400px;
+  border: 1px solid #444;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-left: 24px;
+}
+
+.hero-search button {
+  /* height: 36px; */
+  font-size: 12px;
+  border: 1px solid #444;
+  border-left: none;
+  background-color: rgb(247, 79, 37);
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 12px 24px;
+}
+
+.hero-content ul {
+  display: flex;
+  gap: 24px;
+}
+
+.hero-content ul ion-icon {
+  color: rgb(247, 79, 37);
+  height: 24px;
+  width: 24px;
+  vertical-align: center;
+  padding-right: 5px;
+}
+
+.hero-content ul li {
+  display: flex;
+  align-items: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES:: ABOUT US
+/******************************************/
+.about-us-content h2,
+.order-now-content h2,
+.opening-content h2,
+.testimonial-content h2 {
+  color: #ff922b;
+  font-size: 18px;
+  /* font-weight: bold; */
+  margin-bottom: 10px;
+}
+
+.about-us-content h1,
+.order-now-content h1,
+.opening-content h1,
+.testimonial-content h1 {
+  margin: 0;
+  font-size: 52px;
+  color: #eee;
+  line-height: 1;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.about-us-content p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.discover-btn {
+  font-size: 12px;
+
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.discover-btn button {
+  padding: 12px;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.discover-btn button:first-child {
+  background-color: #f76707;
+  color: #eee;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.discover-btn button:last-child {
+  background-color: #ffa94d;
+  color: #eee;
+  border-left: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.discover-icon {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES:: ORDER-NOW
+/*******************************************/
+
+.order-now-content h1 {
+  margin-bottom: 36px;
+}
+
+.category-menu {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.category-menu li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+li.hovered-category {
+  color: #ff922b;
+  border-bottom: 1px solid #ff922b;
+}
+
+.category-menu li:hover {
+  color: #ff922b;
+  border-bottom: 1px solid #ff922b;
+}
+
+.image-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 175px);
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px 30px;
+  margin-bottom: 28px;
+}
+
+.food-pic {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-1 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.image-2 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.image-3 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.image-4 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.image-5 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.image-6 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.image-7 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.image-8 {
+  background-image: url(../images/menu-image-1.webp);
+}
+
+.content-menu {
+  height: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+}
+
+.menu-price {
+  font-family: "Vidaloka";
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.rating {
+  display: flex;
+  gap: -5px;
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: #ff922b;
+  width: 20px;
+  height: 20px;
+}
+
+.food-name {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.content-menu button {
+  background-color: #ff922b;
+  color: #eee;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.content-menu-hovered,
+.food-pic:hover .content-menu {
+  visibility: visible;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+}
+
+.bullets {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.bullets li {
+  width: 5px;
+  height: 5px;
+  background-color: #ffa94d;
+  border-radius: 50%;
+}
+
+li.bigger-one,
+.bullets li:hover {
+  width: 12px;
+  height: 12px;
+  background-color: #f76707;
+}
+
+/******************************************
+/* ADDITIONAL STYLES:: OPENING
+/*******************************************/
+
+.opening-hours {
+  padding-top: 50px;
+  background-image: linear-gradient(280deg, #795c4b, #4a3425);
+  width: 100%;
+}
+.opening-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opening-content h1 {
+  margin-bottom: 32px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.telephone {
+  border: 1px solid #ff922b;
+  border-radius: 50%;
+  padding: 8px;
+  color: #ff922b;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 6px;
+}
+
+.call-now {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 6px;
+}
+
+.opening-contact {
+  font-family: "Vidaloka", serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+.schedule {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
+
+.schedule-day {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.schedule-time {
+  font-family: "Vidaloka", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.opening-video {
+  position: relative;
+  width: 70%;
+  /* background-color: red; */
+  margin-bottom: 50px;
+}
+
+.arrow {
+  color: #ff922b;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: 1px solid #ff922b;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.opening-left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.opening-right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.video {
+  margin: 0 auto;
+  display: block;
+  width: 600px;
+  height: 330px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES:: TESTIMONIAL
+/*******************************************/
+
+.testimonial {
+  padding: 50px 0;
+  width: 100%;
+  background-color: #4a3425;
+}
+
+.testimonial-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-content h1 {
+  margin-bottom: 50px;
+}
+
+.testimonial-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.testimonial-content-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.testimonial-content-occupation {
+  font-weight: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 12px;
+}
+
+.testimonial-content .rating {
+  margin-bottom: 12px;
+}
+
+.testimonial-content-caption {
+  width: 70%;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}

@@ -383,7 +383,7 @@
 
 // // This exercise has many, many solutions. It's a job interview classic that a significant number of candidates fail. Try your best!
 
-// // Chapter 6. Coding time!
+// // Chapter 5. Coding time!
 // // Improved hello
 // // Complete the following program so that it asks the user for his first and last names, then show the result of the sayHello() function.
 
@@ -493,3 +493,72 @@
 // console.log(areaOfCircle(7));
 // console.log(circumferenceOfCircle(14));
 // console.log(areaOfCircle(14));
+
+// Chapter 6. Coding Time!
+// // Adding character experience
+// // Improve our example RPG program to add an experience property named xp to the character. Its initial value is 0. Experience must appear in character description.
+
+// // TODO: create the character object here
+// const aurora = {
+//   name: "Aurora",
+//   health: 150,
+//   strength: 25,
+//   xp: 0,
+
+//   describe() {
+//     return `${this.name} has ${this.health} health points, ${this.strength} as strength and ${this.xp} XP points.`;
+//   },
+// };
+
+// // Aurora is harmed by an arrow
+// aurora.health -= 20;
+
+// // Aurora equips a strength necklace
+// aurora.strength += 10;
+
+// // Aurora learn a new skill
+// aurora.xp += 15;
+
+// console.log(aurora.describe());
+
+// // Modeling a dog
+// // Complete the following program to add the dog object definition.
+
+// // TODO: create the dog object here
+// const dog = {
+//   name: "Fang",
+//   species: "boarhound",
+//   size: 75,
+
+//   bark() {
+//     return "Grrr! Grrr!";
+//   },
+// };
+
+// console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
+// console.log(`Look, a cat! ${dog.name} barks: ${dog.bark()}`);
+
+// Modeling a bank account
+// Write a program that creates an account object with the following characteristics:
+
+// A name property set to "Alex".
+// A balance property set to 0.
+// A credit method adding the (positive or negative) value passed as an argument to the account balance.
+// A describe method returning the account description.
+// Use this object to show its description, crediting 250, debiting 80, then show its description again.
+
+const account = {
+  name: "Alex",
+  balance: 0,
+
+  credit(number) {
+    this.balance += number;
+  },
+  describe() {
+    return `owner: ${this.name}, balance: ${this.balance}`;
+  },
+};
+
+account.credit(50);
+account.credit(-350);
+console.log(account.describe());

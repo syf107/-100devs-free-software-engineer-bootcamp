@@ -538,27 +538,111 @@
 // console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
 // console.log(`Look, a cat! ${dog.name} barks: ${dog.bark()}`);
 
-// Modeling a bank account
-// Write a program that creates an account object with the following characteristics:
+// // Modeling a bank account
+// // Write a program that creates an account object with the following characteristics:
 
-// A name property set to "Alex".
-// A balance property set to 0.
-// A credit method adding the (positive or negative) value passed as an argument to the account balance.
-// A describe method returning the account description.
-// Use this object to show its description, crediting 250, debiting 80, then show its description again.
+// // A name property set to "Alex".
+// // A balance property set to 0.
+// // A credit method adding the (positive or negative) value passed as an argument to the account balance.
+// // A describe method returning the account description.
+// // Use this object to show its description, crediting 250, debiting 80, then show its description again.
 
-const account = {
-  name: "Alex",
-  balance: 0,
+// const account = {
+//   name: "Alex",
+//   balance: 0,
 
-  credit(number) {
-    this.balance += number;
-  },
-  describe() {
-    return `owner: ${this.name}, balance: ${this.balance}`;
-  },
-};
+//   credit(number) {
+//     this.balance += number;
+//   },
+//   describe() {
+//     return `owner: ${this.name}, balance: ${this.balance}`;
+//   },
+// };
 
-account.credit(50);
-account.credit(-350);
-console.log(account.describe());
+// account.credit(50);
+// account.credit(-350);
+// console.log(account.describe());
+
+// // Chapter 7 Coding time!
+// // Create all these programs in a generic fashion: the program output should reflect any update in the array's content.
+
+// // Musketeers
+// // Write a program that:
+
+// // Creates an array named musketeers containing values "Athos", "Porthos" and "Aramis".
+// // Shows each array element using a for loop.
+// // Adds the "D'Artagnan" value to the array.
+// // Shows each array element using the forEach() method.
+// // Remove poor Aramis.
+// // Shows each array element using a for-of loop.
+
+// const musketeers = ["Athos", "Porthos", "Aramis"];
+// for (let i = 0; i < musketeers.length; i++) {
+//   console.log(musketeers[i]);
+// }
+
+// musketeers.push("D'Artagnan");
+
+// musketeers.forEach((musketeer) => {
+//   console.log(musketeer);
+// });
+
+// musketeers.splice(2, 1);
+
+// for (const musketeer of musketeers) {
+//   console.log(musketeer);
+// }
+
+// // Sum of values
+// // Write a program that creates the following array, then calculates and shows the sum of its values (42 in that case).
+
+// const values = [3, 11, 7, 2, 9, 10];
+
+// function sumOfValues(arr) {
+//   let sum = 0;
+//   arr.forEach((value) => {
+//     sum += value;
+//   });
+//   return sum;
+// }
+
+// console.log(sumOfValues(values));
+
+// // Array maximum
+// // Write a program that creates the following array, then calculates and shows the array's maximum value.
+
+// const values = [3, 11, 7, 2, 9, 10];
+
+// function arrayMaximum(arr) {
+//   let max = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+
+// console.log(arrayMaximum(values));
+
+// // List of words
+// // Write a program that asks the user for a word until the user types "stop". The program then shows each of these words, except "stop".
+
+// function askTheWord() {
+//   const wordsContainer = [];
+//   let word = "";
+
+//   while (word !== "stop") {
+//     word = prompt("Please give us the word.");
+//     if (word === "stop") {
+//       break;
+//     } else {
+//       wordsContainer.push(word);
+//     }
+//   }
+
+//   wordsContainer.forEach((word) => {
+//     console.log(word);
+//   });
+// }
+// askTheWord();

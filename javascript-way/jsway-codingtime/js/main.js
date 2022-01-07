@@ -646,3 +646,70 @@
 //   });
 // }
 // askTheWord();
+
+// // Chapter 8. Coding time!
+// // Word info
+// // Write a program that asks you for a word then shows its length, lowercase, and uppercase values.
+
+// function wordInfo() {
+//   const word = prompt("What is your word?");
+//   if (Number(word)) {
+//     console.log("This is number, not a word.");
+//   } else {
+//     console.log(
+//       `The length of word is ${
+//         word.length
+//       }.\nThe lowercase form is: ${word.toLowerCase()}.\nThe uppercase form is: ${word.toUpperCase()}.\nThe vowel count is ${vowelCount(
+//         word
+//       )}.\nThe Backward form is: ${backwardForm(
+//         word
+//       )}.\nThe palindrome checker is: ${palindromeChecker(word)}`
+//     );
+//   }
+// }
+
+// wordInfo();
+
+// // Vowel count
+// // Improve the previous program so that it also shows the number of vowels inside the word.
+
+// function vowelCount(word) {
+//   // create an array of vowel letter and the variable to count it.
+//   const vowelArray = ["a", "e", "i", "o", "u"];
+//   let vowelSum = 0;
+
+//   //   loop each vowel letter.
+//   for (const vowel of vowelArray) {
+//     // compare each vowel with each character inside the word.
+//     for (let i = 0; i < word.length; i++) {
+//       // if it matches, add the sum to one.
+//       if (vowel === word[i].toLowerCase()) {
+//         vowelSum += 1;
+//       }
+//     }
+//   }
+
+//   //   return the result of vowel number.
+//   return vowelSum;
+// }
+
+// // Backwards word
+// // Improve the previous program so that it shows the word written backwards.
+
+// function backwardForm(word) {
+//   let wordInBackward = "";
+
+//   for (let i = word.length - 1; i >= 0; i--) {
+//     wordInBackward += word[i];
+//   }
+
+//   return wordInBackward;
+// }
+
+// // Palindrome
+// // Improve the previous program to check if the word is a palindrome. A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+// // "radar" should be detected as a palindrome, "Radar" too.
+
+// function palindromeChecker(word) {
+//   return word.toLowerCase() === backwardForm(word).toLowerCase();
+// }

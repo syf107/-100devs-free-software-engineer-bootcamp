@@ -1,4 +1,3 @@
-alert("We can become together");
 document.querySelector("#check").addEventListener("click", check);
 
 function check() {

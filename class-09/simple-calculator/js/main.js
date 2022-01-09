@@ -1,51 +1,17 @@
-// let total = 0;
-
-// document.querySelector("#pumpkin").addEventListener("click", makeZero);
-// document.querySelector("#dominosPizza").addEventListener("click", jumanji);
-// document.querySelector("#zebra").addEventListener("click", add9);
-// document.querySelector("#cantThinkOfAnything").addEventListener("click", sub2);
-// document.querySelector("#multiCast").addEventListener("click", multiplySix);
-// document.querySelector("#divided").addEventListener("click", divideItBy4);
-
-// function makeZero() {
-//   total = 0;
-//   document.querySelector("#placeToPutResult").innerText = total;
-// }
-
-// function jumanji() {
-//   total = total + 3;
-//   document.querySelector("#placeToPutResult").innerText = total;
-// }
-
-// function add9() {
-//   total = total + 9;
-//   document.querySelector("#placeToPutResult").innerHTML = total;
-// }
-
-// function sub2() {
-//   total = total - 2;
-//   document.querySelector("#placeToPutResult").innerHTML = total;
-// }
-
-// function multiplySix() {
-//   total = total * 6;
-//   document.querySelector("#placeToPutResult").innerHTML = total;
-// }
-
-// function divideItBy4() {
-//   total = total / 4;
-//   document.querySelector("#placeToPutResult").innerHTML = total;
-// }
-
+// make the total variable and store 0 as value.
 let total = 0;
 
+// select the id of the tag you want to put effect after the click.
 document.getElementById("pumpkin").addEventListener("click", makeZero);
 document.querySelector("#dominosPizza").onclick = addThree;
 document.querySelector("#zebra").addEventListener("click", addNine);
-document.querySelector("#cantThinkOfAnything").addEventListener("click", minusTwo);
+document
+  .querySelector("#cantThinkOfAnything")
+  .addEventListener("click", minusTwo);
 document.querySelector("#multiCast").addEventListener("click", multipliedBySix);
 document.querySelector("#divided").addEventListener("click", dividedByFour);
 
+// create function that will be revoked by click effect on tag.
 function makeZero() {
   total = 0;
   document.querySelector("#placeToPutResult").innerHTML = total;

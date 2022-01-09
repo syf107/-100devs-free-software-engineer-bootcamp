@@ -8,6 +8,22 @@
 // The Object.keys function will be useful when you need to go over the properties of objects to compare them.
 
 // Your code here.
+function deepEqual(obj1, obj2) {
+  if (obj1 === obj2) return true;
+  //   console.log(typeof obj1, typeof obj2);
+  const keysA = Object.keys(obj1),
+    keysB = Object.keys(obj2);
+
+  if (keysA.length != keysB.length) return false;
+
+  for (let key of keysA) {
+    // console.log(key);
+    // console.log(deepEqual(obj1[key], obj2[key]));
+    if (!keysB.includes(key) || !deepEqual(obj1[key], obj2[key])) return false;
+  }
+
+  return true;
+}
 
 let obj = { here: { is: "an" }, object: 2 };
 console.log(deepEqual(obj, obj));

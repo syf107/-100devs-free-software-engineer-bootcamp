@@ -4,6 +4,22 @@
 // Thinking back to the notes about side effects and pure functions in the previous chapter, which variant do you expect to be useful in more situations? Which one runs faster?
 
 // Your code here.
+function reverseArray(array) {
+  let result = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    result.push(array[i]);
+  }
+  return result;
+}
+
+function reverseArrayInPlace(array) {
+  for (let i = 0; i < Math.floor((array.length + 1) / 2); i++) {
+    let oldElement = array[i];
+    array[i] = array[array.length - 1 - i];
+    array[array.length - 1 - i] = oldElement;
+  }
+  return array;
+}
 
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];

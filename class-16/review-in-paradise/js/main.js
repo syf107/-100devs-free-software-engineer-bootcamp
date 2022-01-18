@@ -53,8 +53,8 @@ function summerMonthChecker(month) {
   const capitalizedMonth = capitalize(month);
 
   if (
-    twelveMonths.includes(capitalizedMonth) > 0 &&
-    summerMonths.includes(capitalizedMonth) > 0
+    twelveMonths.includes(capitalizedMonth) &&
+    summerMonths.includes(capitalizedMonth)
   ) {
     alert("YAY");
   } else {

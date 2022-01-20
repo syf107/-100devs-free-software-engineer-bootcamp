@@ -26,7 +26,6 @@ Read: https://javascript.info/object
 Also, the files you’ll need for class / homework are attached! Don't forget to unzip the folder!
 
 
-
 @everyone Hope arrays made a little more sense tonight! On to objects! See you at office hours on Saturday!
 
 Don't forget the #deleted-channel too! 

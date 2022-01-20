@@ -353,9 +353,3 @@
 // }
 
 // console.log(usersById);
-
-let fruits = {
-  white: true,
-};
-
-console.log(fruits);

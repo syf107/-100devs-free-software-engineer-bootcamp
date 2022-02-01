@@ -1,0 +1,50 @@
+Hey @everyone 
+
+What a way to end the #BestWeekEver! Hope you had some fun and can see how Git would be useful! 
+
+🚨IMPORTANT: If you haven't checked-in please show Microsoft Azure some love on this tweet: https://twitter.com/leonnoel/status/1356732050523348992
+
+⭐️Homework due next Tuesday:
+Intro to Git and Github: https://aka.ms/ads/Github
+
+🚀 Homework due next Thursday (Feb. 4 th):
+
+Make the cocktailDB api work with spaces between the names!
+Find three APIs and build three simple apps using those APIs (Not all of these work, but it is a start: https://github.com/public-apis/public-apis)
+Build one additional app that takes a response from one API and uses it to get data from another
+Do: Five Codewars
+
+Want to push? 
+Make a rotating list of drinks (an automatic carousel) from the cocktailDB
+Make the NASA API handle all the data types including video
+Add an API to your portfolio website
+Do: A 7kyu Codewars
+
+
+
+
+Hey @everyone 
+
+👆🏾Ha, the emotes above made me smile, thank you! Hope you had some fun working with some real APIs. Excited to dig in more on Saturday and get into some more Git! Setting up a PARTY BOB CAM... 
+
+✅ If you haven't checked-in please give a retweet and a like: https://twitter.com/leonnoel/status/1357460722519834628
+
+⭐️Homework due next Tuesday:
+Intro to Git and Github: https://aka.ms/ads/Github
+
+Want to Push?
+Build a slot machine: https://github.com/learnwithleon/100devs-slot-machine
+
+ 🗓 Homework due Today:
+
+Submit your best API homework here: https://github.com/learnwithleon/100devs-simple-api
+Need help submitting? Come to office hours on Saturday!
+Do: Join our Codewars Clan - #100Devs - leonnoel.com/twitch
+
+Pushed? 
+Submit your cocktailDB rotating list here: https://github.com/learnwithleon/100devs-cocktaildb-rotate-push
+
+
+🔥🔥🔥   OFFICE HOURS SAT 12pm EST  🔥🔥🔥
+
+Solutions for tonight:

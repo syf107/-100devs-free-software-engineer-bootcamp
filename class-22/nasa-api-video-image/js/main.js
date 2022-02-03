@@ -3,8 +3,7 @@ document.querySelector("button").addEventListener("click", getFetch);
 
 function getFetch() {
   const choice = document.querySelector("input").value;
-  const url =
-    "https://api.nasa.gov/planetary/apod?api_key=cBpFpAOGu26hlUXFVMKcCq569cqczMLEvlt0pcHb&date=2022-02-01";
+  const url = `https://api.nasa.gov/planetary/apod?api_key=cBpFpAOGu26hlUXFVMKcCq569cqczMLEvlt0pcHb&date=${choice}`;
 
   fetch(url)
     .then((res) => res.json()) // parse response as JSON
@@ -15,6 +14,8 @@ function getFetch() {
         document.querySelector("img").src = data.hdurl;
       } else if (data.media_type === "video") {
         document.querySelector("iframe").src = data.url;
+      } else {
+        alert("MEDIA NOT SUPPORTED - CONTACT NASA NOW");
       }
       document.querySelector("h3").innerText = data.explanation;
     })

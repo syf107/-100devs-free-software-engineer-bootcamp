@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Simple async sync example</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script>
+      console.log("Starting");
+      let image;
+
+      fetch("coffee.jpg")
+        .then((response) => {
+          console.log("It worked :)");
+          return response.blob();
+        })
+        .then((myBlob) => {
+          let objectURL = URL.createObjectURL(myBlob);
+          image = document.createElement("img");
+          image.src = objectURL;
+          document.body.appendChild(image);
+        })
+        .then(() => {
+          console.log("All done! " + image.src + "displayed.");
+        })
+        .catch((error) => {
+          console.log(
+            "There has been a problem with your fetch operation: " +
+              error.message
+          );
+        });
+
+      console.log("All done!");
+    </script>
+  </body>
+</html>

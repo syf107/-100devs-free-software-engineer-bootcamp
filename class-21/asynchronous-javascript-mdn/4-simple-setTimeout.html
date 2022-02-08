@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Simple setTimeout - Person Greeter App</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script>
+      // let myGreeting = setTimeout(() => alert("Hello, Mr. Universe!"), 2000);
+
+      // // With a named function
+      // let myGreeting = setTimeout(function sayHi() {
+      //   alert('Hello, Mr. Universe!');
+      // }, 2000);
+
+      // // With a function defined separately
+      // function sayHi() {
+      //   alert('Helllo Mr. Unvierse!');
+      // }
+
+      // let myGreeting = setTimeout(sayHi, 2000);
+
+      function sayHi(who) {
+        alert(`Hello ${who}!`);
+      }
+
+      let myGreeting = setTimeout(sayHi, 2000, "Mr. Universe");
+      clearTimeout(myGreeting);
+    </script>
+  </body>
+</html>

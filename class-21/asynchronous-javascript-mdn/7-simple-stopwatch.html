@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch Application</title>
+    <style>
+      p {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="time"></p>
+    <form>
+      <button class="start">Start</button>
+      <button class="stop">Stop</button>
+      <button class="reset">Reset</button>
+    </form>
+    <script>
+      let secondCount = 0;
+
+      const displayTimer = document.querySelector(".time");
+
+      function displayCounter() {
+        // Calculate current hours, minutes, and seconds;
+        let hours = Math.floor(secondCount / 3600);
+        let minutes = Math.floor((secondCount % 3600) / 60);
+        let seconds = Math.floor(secondCount % 60);
+
+        // Display the number
+
+        let displayHours = hours < 10 ? "0" + hours : hours;
+        let displayMinutes = minutes < 10 ? "0" + minutes : minutes;
+        let displaySeconds = seconds < 10 ? "0" + seconds : seconds;
+
+        displayTimer.innerHTML = `${displayHours} : ${displayMinutes} : ${displaySeconds}`;
+
+        secondCount++;
+      }
+
+      // storing display counter and clear interval;
+      let stopWatch;
+
+      // button
+      const startBtn = document.querySelector(".start");
+      const stopBtn = document.querySelector(".stop");
+      const resetBtn = document.querySelector(".reset");
+
+      startBtn.addEventListener("click", () => {
+        stopWatch = setInterval(displayCounter, 1000);
+        startBtn.disabled = true;
+      });
+
+      stopBtn.addEventListener("click", () => {
+        clearInterval(stopWatch);
+        startBtn.disabled = false;
+      });
+
+      resetBtn.addEventListener("click", () => {
+        clearInterval(stopWatch);
+        startBtn.disabled = false;
+        secondCount = 0;
+        displayCounter();
+      });
+
+      displayCounter();
+    </script>
+  </body>
+</html>

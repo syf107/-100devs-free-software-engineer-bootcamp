@@ -13,13 +13,15 @@
   </head>
   <body>
     <p class="time"></p>
-    <form>
+    <p>
       <button class="start">Start</button>
       <button class="stop">Stop</button>
       <button class="reset">Reset</button>
-    </form>
+    </p>
     <script>
-      let secondCount = 0;
+      let secondCount = 5600;
+
+      let stopWatch;
 
       const displayTimer = document.querySelector(".time");
 
@@ -41,7 +43,6 @@
       }
 
       // storing display counter and clear interval;
-      let stopWatch;
 
       // button
       const startBtn = document.querySelector(".start");

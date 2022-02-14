@@ -1,0 +1,82 @@
+Hey @everyone 
+
+Thank you for another fun office hours! Always love answering your questions! Hoping that you all have a relaxing and peaceful break.  
+
+🔥:pikahello: 🔥 NO CLASS UNTIL FEB. 23rd! 🔥:pikahello: 🔥 
+
+🗓 HOMEWORK DUE (Tues. Feb 23rd):
+DO: TAKE A BREAK
+DO: Catch Up
+DO: Intro JS Course - https://www.codecademy.com/learn/introduction-to-javascript (For syntax practice and review - DON'T PAY FOR ANYTHING!)
+DO: Please, fill out this survey: https://forms.gle/PBQSj19yzby14tir8
+👆🏾 I really want to work hard over break to make class and #100Devs the best it can be! Please fill out this quick survey, so I can make things better, more fun, and more engaging! 
+
+We'll have a review stream and some other funky stuff over break, so until then be well and if you need help catching up PLEASE ask here on discord!
+
+
+
+
+Hey @everyone 
+
+ WE ARE BACK! You were missed! Come say hello, get some review in, and begin our march towards backend web dev!
+
+Class-24 of #100Devs starts in 50 minutes (6:30pm ET) live on Twitch: https://leonnoel.com/twitch
+
+Here are the slides if you would like to follow along: https://slides.com/leonnoel/100devs-javascript-review-break/live (remove /live for a non auto-advancing  copy)
+
+⭐️Please check-in by liking and retweeting this tweet before class: https://twitter.com/leonnoel/status/1364341959393910790
+
+The last #100Devs class can be found here: https://youtu.be/Iq3ipsUAfzE
+
+⭐️Homework Due Today:
+DO: Catch Up
+DO: Intro JS Course - https://www.codecademy.com/learn/introduction-to-javascript
+Join our Codewars Clan - #100Devs - leonnoel.com/twitch
+No actual submission today
+
+Pushed?
+Build a slot machine: https://github.com/learnwithleon/100devs-slot-machine
+
+🗓 HOMEWORK DUE (Tues. March 2nd):
+Watch / Do: https://youtu.be/PFmuCDHHpwk
+Read / Do: JS Way Ch. 09 (https://github.com/thejsway/thejsway/blob/master/manuscript/chapter09.md)
+Read / Do: Eloquent JS Ch. 06 (https://eloquentjavascript.net/06_object.html)
+Do: 7 Codewars
+DO: Professional Checklist (Will be shared after class)
+
+⚡️Crafting Story CLASS FRIDAY ⚡️
+
+ 🔥 OFFICE HOURS SUNDAY 1pm EST  🔥
+
+
+Also, the files you’ll need for class / homework are attached! Don't forget to unzip the folder!
+
+
+
+Hi @everyone 
+
+Welcome back! Happy to have you all back from break, you were missed! 
+
+Excited to get back into normal classes on Thursday with OOP and thanks for sticking through some codewars stress! ANALYSIS > SOLVING
+
+⭐️Homework Due Today:
+DO: Catch Up
+DO: Intro JS Course - https://www.codecademy.com/learn/introduction-to-javascript
+Join our Codewars Clan - #100Devs - leonnoel.com/twitch
+No actual submission though
+
+Pushed?
+Build a slot machine: https://github.com/learnwithleon/100devs-slot-machine
+
+🗓 HOMEWORK DUE (Tues. March 2nd):
+Watch / Do: https://youtu.be/PFmuCDHHpwk
+Read / Do: JS Way Ch. 09 (https://github.com/thejsway/thejsway/blob/master/manuscript/chapter09.md)
+Read / Do: Eloquent JS Ch. 06 (https://eloquentjavascript.net/06_object.html)
+Do: 7 Codewars
+DO: Professional Checklist (Will be shared after class)
+
+⚡️Crafting Story CLASS FRIDAY ⚡️
+
+ 🔥 OFFICE HOURS SUNDAY 1pm EST  🔥
+
+Solutions from tonight:

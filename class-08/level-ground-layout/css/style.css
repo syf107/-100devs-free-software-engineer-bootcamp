@@ -87,6 +87,22 @@ header {
   border-radius: 3px;
 }
 
+.btn-mobile-nav {
+  display: none;
+  cursor: pointer;
+  background: none;
+}
+
+.mobile-nav-icon {
+  height: 4rem;
+  width: 4rem;
+  color: #f1f1f1;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
 /******************************************
 /* SECTION HERO 
 /*******************************************/
@@ -141,6 +157,7 @@ header {
   border: 3px solid #f1f1f1;
   color: #f1f1f1;
   border-radius: 50%;
+  z-index: 125;
 }
 
 .hero-desc {
@@ -200,7 +217,7 @@ header {
 
 .facility-grey-photos {
   height: 20rem;
-  width: 35rem;
+  width: 70%;
   background-color: #1e222f;
   margin-bottom: 2.4rem;
 }
@@ -341,4 +358,105 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
+}
+
+/*******************/
+/****MEDIA QUERY****/
+/*******************/
+
+/* below 752px */
+@media (max-width: 47em) {
+  html {
+    font-size: 50%;
+  }
+  .why-text {
+    width: 80%;
+  }
+
+  .facility {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .volunteer-text {
+    width: 80%;
+  }
+}
+
+/* below 560px */
+@media (max-width: 35em) {
+  html {
+    font-size: 40%;
+  }
+  .btn-mobile-nav {
+    display: flex;
+    z-index: 9999;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    height: 6rem;
+  }
+
+  .header-nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100%);
+    gap: 4.8rem;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.25 ease-in;
+
+    /* Hide navigation */
+    /* Allows no transition at all. */
+    /* display: none; */
+
+    /* 1) Hide it visually  */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-open .nav-logo {
+    display: none;
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon[name="reorder-four-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+    color: black;
+  }
 }

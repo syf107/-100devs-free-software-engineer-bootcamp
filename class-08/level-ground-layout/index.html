@@ -20,17 +20,26 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="header-nav container">
         <ul class="nav-list">
-          <li><a class="nav-link" href="#">class</a></li>
-          <li><a class="nav-link" href="#">hire us</a></li>
+          <li><a class="nav-link" href="#section-facility">class</a></li>
+          <li><a class="nav-link" href="#section-facility">hire us</a></li>
         </ul>
         <p class="nav-logo">logo</p>
         <ul class="nav-list">
           <li><a class="donate-btn nav-link" href="#">Donate</a></li>
         </ul>
       </nav>
+
+      <div class="btn-mobile-nav">
+        <ion-icon
+          class="mobile-nav-icon"
+          name="reorder-four-outline"
+        ></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+        <p class="nav-logo">logo</p>
+      </div>
     </header>
     <main>
       <section class="section-hero">
@@ -64,7 +73,7 @@
           </p>
         </div>
       </section>
-      <section class="section-facility">
+      <section id="section-facility" class="section-facility">
         <div class="facility container">
           <div class="facility-list">
             <div class="facility-grey-photos"></div>

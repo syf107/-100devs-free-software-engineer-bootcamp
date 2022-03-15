@@ -33,67 +33,14 @@ body {
   background: linear-gradient(#8e9eab, #eef2f3);
 }
 
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
-.hero-header {
-  min-height: 100vh;
-  background: linear-gradient(
-      to right,
-      rgba(142, 158, 171, 0.3) 50%,
-      rgba(238, 242, 243, 0.1)
-    ),
-    url("/images/menu-image-2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 85%;
-}
-
-.navigation {
-  /* width: 85%; */
-  padding: 2rem 0 0 7rem;
-  /* background: linear-gradient(to right, #8e9eab 65%, #eef2f3); */
-  display: flex;
-  gap: 2.4rem;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.navigation ul {
-  display: flex;
-  /* justify-content: flex-end; */
-  gap: 2.4rem;
-}
-
-.hero-page {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.hero-content {
-  width: 40%;
-}
-
-.about-us {
-  width: 85%;
-  /* position: relative; */
-  margin: 0 auto;
-  min-height: 100vh;
-  background: url("/images/menu-image-5.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 10%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.about-us-content {
-  border-radius: 8px;
-  padding: 2.5rem;
-  width: 40%;
-  margin-right: 7rem;
-}
 
 .order-now {
   width: 100%;
@@ -107,9 +54,51 @@ body {
   align-items: center;
 }
 
+body {
+  position: relative;
+}
+
 /******************************************
-/* ADDITIONAL STYLES:: HERO
+/* ADDITIONAL STYLES:: NAVIGATION
 /*******************************************/
+
+/* NAVIGATION */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.navigation {
+  position: absolute;
+  width: 85%;
+
+  display: flex;
+  gap: 2.4rem;
+  justify-content: flex-end;
+  /* align-items: center; */
+  padding: 2rem 0;
+  margin: 0 auto;
+}
 
 .navigation-link:link,
 .navigation-link:visited {
@@ -130,6 +119,22 @@ body {
   align-items: center;
 }
 
+/******************************************
+/* ADDITIONAL STYLES:: HERO
+/*******************************************/
+
+.hero-header {
+  min-height: 100vh;
+  background: url("/images/cuisine-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 85%; */
+}
+
+.hero-content {
+  width: 40%;
+}
+
 .hero-content h1,
 .section-main-title {
   font-weight: bold;
@@ -137,6 +142,9 @@ body {
 }
 
 .hero-content h1 {
+  padding: 7rem;
+  padding-left: 0;
+  margin: 0;
   font-size: 7.4rem;
 }
 
@@ -191,6 +199,28 @@ body {
 /******************************************
 /* ADDITIONAL STYLES:: ABOUT US
 /******************************************/
+.about-us {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: url("/images/cuisine-about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 10%; */
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+}
+
+.about-us-content {
+  position: absolute;
+  top: 7.5rem;
+  right: 15rem;
+  border-radius: 8px;
+  padding: 2.5rem;
+  width: 40%;
+}
+
 .navigation-title {
   color: #ff922b;
   font-size: 1.8rem;
@@ -268,6 +298,8 @@ body {
 
 .category-menu li {
   padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
   border-bottom: 1px solid #555;
   cursor: pointer;
   margin-bottom: 24px;
@@ -283,7 +315,6 @@ body {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
   gap: 2rem 3rem;
   margin-bottom: 2.8rem;
 }
@@ -295,36 +326,84 @@ body {
   height: 30rem;
 }
 
-.image-1 {
-  background-image: url(../images/menu-image-1.webp);
+.breakfast-1 {
+  background-image: url(/images/breakfast-1.jpg);
 }
 
-.image-2 {
-  background-image: url(../images/menu-image-1.webp);
+.breakfast-2 {
+  background-image: url(/images/breakfast-2.jpg);
 }
 
-.image-3 {
-  background-image: url(../images/menu-image-1.webp);
+.breakfast-3 {
+  background-image: url(/images/breakfast-3.jpg);
 }
 
-.image-4 {
-  background-image: url(../images/menu-image-1.webp);
+.breakfast-4 {
+  background-image: url(/images/breakfast-4.jpg);
 }
 
-.image-5 {
-  background-image: url(../images/menu-image-1.webp);
+.lunch-1 {
+  background-image: url(/images/lunch-1.jpg);
 }
 
-.image-6 {
-  background-image: url(../images/menu-image-1.webp);
+.lunch-2 {
+  background-image: url(/images/lunch-2.jpg);
 }
 
-.image-7 {
-  background-image: url(../images/menu-image-1.webp);
+.lunch-3 {
+  background-image: url(/images/lunch-3.jpg);
 }
 
-.image-8 {
-  background-image: url(../images/menu-image-1.webp);
+.lunch-4 {
+  background-image: url(/images/lunch-4.jpg);
+}
+
+.dinner-1 {
+  background-image: url(/images/dinner-1.jpg);
+}
+
+.dinner-2 {
+  background-image: url(/images/dinner-2.jpg);
+}
+
+.dinner-3 {
+  background-image: url(/images/dinner-3.jpg);
+}
+
+.dinner-4 {
+  background-image: url(/images/dinner-4.jpg);
+}
+
+.dessert-1 {
+  background-image: url(/images/dessert-1.jpg);
+}
+
+.dessert-2 {
+  background-image: url(/images/dessert-2.jpg);
+}
+
+.dessert-3 {
+  background-image: url(/images/dessert-3.jpg);
+}
+
+.dessert-4 {
+  background-image: url(/images/dessert-4.jpg);
+}
+
+.shake-1 {
+  background-image: url(/images/shake-1.jpg);
+}
+
+.shake-2 {
+  background-image: url(/images/shake-2.jpg);
+}
+
+.shake-3 {
+  background-image: url(/images/shake-3.jpg);
+}
+
+.shake-4 {
+  background-image: url(/images/shake-4.jpg);
 }
 
 .content-menu {

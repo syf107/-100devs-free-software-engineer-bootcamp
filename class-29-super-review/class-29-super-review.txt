@@ -1,0 +1,15 @@
+:pikahello:    Our Front-end SUPER REVIEW starts in 54 minutes: https://leonnoel.com/twitch
+
+ Come review everything you will need before we jump into the backend! 
+
+Here are the slides if you would like to follow along: https://slides.com/leonnoel/html-css-js-review-100devs/live (remove /live for a non auto-advancing  copy)
+
+🗓 HOMEWORK DUE (March 16th):
+Do: Start prepping THE BANK
+Do: Complete Your Professional Links
+READ: Modern Javascript For Dinosaurs - https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
+WATCH: Node.js Crash Course (just get through it) - https://youtu.be/fBNz5xF-Kx4
+
+⚡️PREP  CLASS FRIDAY ⚡️
+
+ 🔥  OFFICE HOURS SUNDAY 1pm EST  🔥

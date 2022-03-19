@@ -34,29 +34,14 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 120rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-.order-now {
-  width: 100%;
-  padding: 5rem 0;
-}
-
-.order-now-content {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-body {
-  position: relative;
-}
 
 /******************************************
 /* ADDITIONAL STYLES:: NAVIGATION
@@ -200,16 +185,12 @@ body {
 /* ADDITIONAL STYLES:: ABOUT US
 /******************************************/
 .about-us {
+  padding: 3.2rem 0;
   position: relative;
-  margin: 0 auto;
   min-height: 100vh;
   background: url("/images/cuisine-about.png");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: 10%; */
-  display: flex;
-  /* justify-content: end; */
-  align-items: center;
 }
 
 .about-us-content {
@@ -217,7 +198,6 @@ body {
   top: 7.5rem;
   right: 15rem;
   border-radius: 8px;
-  padding: 2.5rem;
   width: 40%;
 }
 
@@ -287,7 +267,26 @@ body {
 /* ADDITIONAL STYLES:: ORDER-NOW
 /*******************************************/
 
-.order-now-content h1 {
+.order-now {
+  padding: 7rem 0;
+  background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("/images/photo-carousel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.order-now-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-now-content > h1 {
   margin-bottom: 3.6rem;
 }
 
@@ -324,6 +323,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 30rem;
+  transition: all 2s ease-in-out;
 }
 
 .breakfast-1 {
@@ -605,22 +605,22 @@ li.bigger-one,
 }
 
 .testimonial-content img {
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .testimonial-content-name {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 6px;
 }
 
 .testimonial-content-occupation {
-  font-weight: 12px;
+  font-weight: 1.2rem;
   color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .testimonial-content .rating {

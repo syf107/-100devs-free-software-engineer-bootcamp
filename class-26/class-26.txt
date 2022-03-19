@@ -1,0 +1,31 @@
+Hey @everyone 
+
+Tonight we are diving deeper into OOP covering inheritance and polymorphism!
+
+⭐️Please check-in by liking and retweeting this tweet before class: https://twitter.com/leonnoel/status/1366880434026516482
+
+Class-26 of #100Devs starts in 50 minutes (6:30pm ET) live on Twitch: https://leonnoel.com/twitch
+
+Here are the slides if you would like to follow along: https://slides.com/leonnoel/100devs-javascript-oop-part-2/live (remove /live for a non auto-advancing  copy)
+
+The last #100Devs class can be found here: https://www.twitch.tv/videos/928428429
+
+Here is the link to our classroom: https://live.remo.co/e/100devs-objects-project-1
+
+And PLEASE watch this before class (12s): https://youtu.be/_cF377eW0nU
+
+✅ HOMEWORK DUE (TODAY):
+Watch / Do: https://youtu.be/PFmuCDHHpwk
+Read / Do: JS Way Ch. 09 (https://github.com/thejsway/thejsway/blob/master/manuscript/chapter09.md)
+Read / Do: Eloquent JS Ch. 06 (https://eloquentjavascript.net/06_object.html)
+Do: 7 Codewars
+
+🗓 HOMEWORK DUE (Tues. March 9th) :
+Shared after class
+
+⚡️Crafting Story CLASS FRIDAY ⚡️
+
+🔥   OFFICE HOURS SUNDAY 1pm EST  🔥
+
+
+Also, the files you’ll need for class / homework are attached! Don't forget to unzip the folder!

@@ -142,7 +142,7 @@
               <li class="desserts-category">Dessert</li>
               <li class="shake-category">Shake</li>
             </ul>
-
+            `
             <ul class="image-menu">
               <li class="food-pic breakfast breakfast-1">
                 <div class="content-menu content-menu-hovered">
@@ -1338,7 +1338,7 @@
       </section>
 
       <section class="opening-hours" id="order-now">
-        <figure class="opening-content">
+        <figure class="opening-content container">
           <h2 class="navigation-title">Book Table</h2>
           <h1 class="section-main-title">Opening Hours</h1>
           <div class="contact">
@@ -1366,43 +1366,52 @@
             </div>
           </div>
 
-          <div class="opening-video">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="opening-left arrow"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="opening-right arrow"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/7toSikYGFNM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+              <img src="/images/arrow-left.svg" alt="" />
+            </button>
+            <div class="carousel__track-container">
+              <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                  <iframe
+                    class="carousel__video"
+                    src="https://www.youtube.com/embed/7toSikYGFNM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+                <li class="carousel__slide">
+                  <iframe
+                    class="carousel__video"
+                    src="https://www.youtube.com/embed/ZyZh_FIhGlU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+                <li class="carousel__slide">
+                  <iframe
+                    class="carousel__video"
+                    src="https://www.youtube.com/embed/dGLzpytb7b0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+              </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+              <img src="/images/arrow-right.svg" alt="" />
+            </button>
+            <div class="carousel__nav">
+              <button class="carousel__indicator current-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+            </div>
           </div>
         </figure>
       </section>

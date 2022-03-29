@@ -2,8 +2,16 @@
 
 class SuperHuman {
   constructor(name, superpower) {
-    this.name = name;
-    this.superpower = superpower;
+    this._name = name;
+    this._superpower = superpower;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get superpower() {
+    return this._superpower;
   }
 
   introduction() {
@@ -15,16 +23,15 @@ class SuperHuman {
 
 class Superhero extends SuperHuman {
   constructor(name, superpower, location) {
-    super(name);
-    super(superpower);
-    this.locaton = location;
+    super(name, superpower);
+    this._location = location;
   }
 
-  get name() {
-    return this.name;
+  get location() {
+    return this._location;
   }
 
-  intro() {
+  introduction() {
     super.introduction();
     console.log(`I am protecting ${this.location} from any villains.`);
   }
@@ -34,6 +41,5 @@ const spiderman = new Superhero("Spiderman", "Spider-Like Superhuman", "Texas");
 
 console.log(spiderman);
 console.log(spiderman.name);
-console.log(spiderman.name);
-console.log(spiderman.superpower);
 console.log(spiderman.location);
+console.log(spiderman.superpower);
